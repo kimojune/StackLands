@@ -136,7 +136,9 @@
     <ClInclude Include="yaCard.h">
       <Filter>Contents\Card</Filter>
     </ClInclude>
-    <ClInclude Include="yaCardObject.h" />
+    <ClInclude Include="yaCardObject.h">
+      <Filter>Engine\CardObject</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="client.rc">
@@ -212,6 +214,8 @@
     <ClCompile Include="yaCard.cpp">
       <Filter>Contents\Card</Filter>
     </ClCompile>
-    <ClCompile Include="yaCardObject.cpp" />
+    <ClCompile Include="yaCardObject.cpp">
+      <Filter>Engine\CardObject</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

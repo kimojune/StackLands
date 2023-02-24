@@ -3,6 +3,7 @@
 #include "yaInput.h"
 #include "yaSceneManager.h"
 #include "yaBG.h"
+#include "yaCard.h"
 
 namespace ya
 {
@@ -18,6 +19,9 @@ namespace ya
 	{
 		mBG = new BG();
 		AddGameObject(mBG, eLayerType::BG);
+
+		mCard = new Card();
+		AddGameObject(mCard, eLayerType::Card);
 		mCuphead = new Cuphead();
 		AddGameObject(mCuphead, eLayerType::Card);
 

@@ -2,6 +2,7 @@
 #include "yaEntity.h"
 #include "yaComponent.h"
 
+
 namespace ya
 {
 	class GameObject : public Entity

@@ -43,11 +43,10 @@ enum class eCardType
 enum class eCardObject
 {
 	Outline,
-	Name,
-	Inline,
 	Frame,
+	Inline,
 	Detail,
 	Value,
-	Healte,
+	Health,
 	End,
 };

@@ -3,6 +3,7 @@
 #include "yaGameObject.h"
 #include "yaImage.h"
 
+
 namespace ya
 {
 	class Card : public GameObject
@@ -16,10 +17,9 @@ namespace ya
 		virtual void Release()override;
 
 	private:
-		Image* mImage;
+		Image* mOutline;
+		Image* mFrame;
+		Image* mInline;
+
 	};
 }
-
-class Card
-{
-};
