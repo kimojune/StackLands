@@ -3,6 +3,7 @@
 
 namespace ya
 {
+	class BG;
 	class Cuphead;
 	class PlayeScene : public Scene
 	{
@@ -20,5 +21,6 @@ namespace ya
 
 	private:
 		Cuphead* mCuphead;
+		BG* mBG;
 	};
 }

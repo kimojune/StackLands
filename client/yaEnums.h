@@ -13,8 +13,7 @@ enum class eSceneType
 enum class eLayerType
 {
 	BG,
-	Monster,
-	Player,
+	Card,
 	Effect,
 	UI,
 	End,
@@ -27,5 +26,28 @@ enum class eComponentType
 	SpriteLenderer,
 	Animator,
 	Audio,
+	End,
+};
+
+enum class eCardType
+{
+	Player,
+	Black,
+	Yellow,
+	Orange,
+	Pink,
+	Brown,
+	End,
+};
+
+enum class eCardObject
+{
+	Outline,
+	Name,
+	Inline,
+	Frame,
+	Detail,
+	Value,
+	Healte,
 	End,
 };

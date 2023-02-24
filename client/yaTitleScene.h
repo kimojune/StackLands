@@ -3,6 +3,7 @@
 
 namespace ya
 {
+	class BG;
 	class TitleScene : public Scene
 	{
 	public :
@@ -18,6 +19,6 @@ namespace ya
 		virtual void OnExit()override;
 
 	private:
-
+		BG* mBG;
 	};
 }

@@ -2,6 +2,7 @@
 #include "yaCuphead.h"
 #include "yaInput.h"
 #include "yaSceneManager.h"
+#include "yaBG.h"
 
 namespace ya
 {
@@ -15,8 +16,10 @@ namespace ya
 
 	void PlayeScene::Initialize()
 	{
+		mBG = new BG();
+		AddGameObject(mBG, eLayerType::BG);
 		mCuphead = new Cuphead();
-		AddGameObject(mCuphead, eLayerType::Player);
+		AddGameObject(mCuphead, eLayerType::Card);
 
 		Scene::Initialize();
 	}

@@ -6,6 +6,7 @@ namespace ya
 	{ 
 		mLayers.reserve(5);
 		mLayers.resize((UINT)eLayerType::End);
+		
 	}
 	Scene::~Scene()
 	{

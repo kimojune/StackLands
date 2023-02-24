@@ -15,7 +15,7 @@ namespace ya
 	}
 	void Cuphead::Initialize()
 	{
-		mImage = Resources::Load<Image>(L"CupHead", L"..\\Resources\\Idle.bmp");
+		mImage = Resources::Load<Image>(L"Card", L"..\\mResources\\player\\Villager.bmp");
 
 		GameObject::Initialize();
 	}

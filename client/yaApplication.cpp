@@ -3,6 +3,7 @@
 #include "yaTime.h"
 #include "yaInput.h"
 
+
 namespace ya
 {
 	ya::Application::Application()
@@ -28,6 +29,8 @@ namespace ya
 		RECT rect = { 0,0,mWidth,mHeight };
 		AdjustWindowRect(&rect, WS_OVERLAPPEDWINDOW, false);
 
+	
+		
 		//윈도우 크기 변경및 출력 설정
 
 		SetWindowPos(mHwnd, nullptr, 0, 0
@@ -42,6 +45,7 @@ namespace ya
 		HBITMAP defaultBitmap
 			= (HBITMAP)SelectObject(mBackHDC, mBackBuffer);
 		DeleteObject(defaultBitmap);
+
 
 		Time::Initialize();
 		Input::Initialize();

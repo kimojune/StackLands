@@ -1,6 +1,7 @@
 #include "yaTitleScene.h"
 #include "yaInput.h"
 #include "yaSceneManager.h"
+#include "yaBG.h"
 
 namespace ya
 {
@@ -12,6 +13,11 @@ namespace ya
 	}
 	void TitleScene::Initialize()
 	{
+
+		Scene::Initialize();
+
+		mBG = new BG();
+		AddGameObject(mBG, eLayerType::Card);
 	}
 	void TitleScene::Update()
 	{
@@ -22,9 +28,11 @@ namespace ya
 	}
 	void TitleScene::Render(HDC hdc)
 	{
+		Scene::Render(hdc);
 	}
 	void TitleScene::Release()
 	{
+		Scene::Release();
 	}
 	void TitleScene::OnEnter()
 	{

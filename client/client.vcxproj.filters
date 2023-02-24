@@ -47,6 +47,15 @@
     <Filter Include="Engine\Resource">
       <UniqueIdentifier>{a0d17071-833c-4d39-9bb1-aeb418655a93}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Contents\BG">
+      <UniqueIdentifier>{c8ff974f-7afc-4bf7-88f9-f1e3833ec0a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Contents\Card">
+      <UniqueIdentifier>{2d14ac25-6043-431f-84cb-462978fbcf1d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Engine\CardObject">
+      <UniqueIdentifier>{d5389086-7920-48f9-85e1-2afb163996e4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Client.h">
@@ -121,6 +130,13 @@
     <ClInclude Include="yaTransform.h">
       <Filter>Engine\Component</Filter>
     </ClInclude>
+    <ClInclude Include="yaBG.h">
+      <Filter>Contents\BG</Filter>
+    </ClInclude>
+    <ClInclude Include="yaCard.h">
+      <Filter>Contents\Card</Filter>
+    </ClInclude>
+    <ClInclude Include="yaCardObject.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="client.rc">
@@ -190,5 +206,12 @@
     <ClCompile Include="yaTransform.cpp">
       <Filter>Engine\Component</Filter>
     </ClCompile>
+    <ClCompile Include="yaBG.cpp">
+      <Filter>Contents\BG</Filter>
+    </ClCompile>
+    <ClCompile Include="yaCard.cpp">
+      <Filter>Contents\Card</Filter>
+    </ClCompile>
+    <ClCompile Include="yaCardObject.cpp" />
   </ItemGroup>
 </Project>

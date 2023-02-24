@@ -16,11 +16,12 @@ namespace ya
 
 		HWND GetHwnd() { return mHwnd; }
 		HDC GetHdc() { return mHdc; }
+
 		//void Release();
 	private:
 		HWND mHwnd;
 		HDC mHdc;
-
+		RECT mRect;
 		//¹é ¹öÆÛ doble buffering
 		HBITMAP mBackBuffer;
 		HDC mBackHDC;
