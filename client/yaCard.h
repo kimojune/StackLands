@@ -11,7 +11,7 @@ namespace ya
 	public:
 		Card();
 		~Card();
-		virtual void Initialize()override;
+		virtual void Initialize()override ;
 		virtual void Update()override;
 		virtual void Render(HDC hdc)override;
 		virtual void Release()override;
