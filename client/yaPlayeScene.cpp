@@ -22,8 +22,8 @@ namespace ya
 
 		mCard = new Card();
 		AddGameObject(mCard, eLayerType::Card);
-		mCuphead = new Cuphead();
-		AddGameObject(mCuphead, eLayerType::Card);
+		//mCuphead = new Cuphead();
+		//AddGameObject(mCuphead, eLayerType::Card);
 
 		Scene::Initialize();
 	}
