@@ -6,19 +6,19 @@
 
 namespace ya
 {
-	ya::Application::Application()
+	Application::Application()
 		:mHwnd(NULL)
 		,mHdc(NULL)
 	{
 	}
 
-	ya::Application::~Application()
+	Application::~Application()
 	{
 		//SceneManager::Release();
 		//Time::Release();
 	}
 
-	void ya::Application::Initialize(HWND hWnd)
+	void Application::Initialize(HWND hWnd)
 	{
 		mHwnd = hWnd;
 		mHdc = GetDC(hWnd);
@@ -29,7 +29,7 @@ namespace ya
 		RECT rect = { 0,0,mWidth,mHeight };
 		AdjustWindowRect(&rect, WS_OVERLAPPEDWINDOW, false);
 
-	
+		mRect = rect;
 		
 		//윈도우 크기 변경및 출력 설정
 
@@ -52,29 +52,46 @@ namespace ya
 		SceneManager::Initialize();
 	}
 
-	void ya::Application::Run()
+	void Application::Run()
 	{
 		Update();
 		Render();
 	}
 
-	void ya::Application::Update()
+	void Application::Update()
 	{
 		Time::Update();
 		Input::Update();
 		SceneManager::Update();
 	}
 
-	void ya::Application::Render()
+	void Application::Render()
 	{
 		//clear
-		Rectangle(mBackHDC, -1, -1, 1502, 802);
-		Time::Render(mBackHDC);
-		Input::Render(mBackHDC);
-		SceneManager::Render(mBackHDC);
+		// stock 오브젝트
+		// 배경색 134,168,135
+		Clear();
 
 		//백버퍼에 있는 그림을 원본 버퍼에 그려줘야 한다.
 		BitBlt(mHdc, 0, 0, mWidth, mHeight, mBackHDC, 0, 0, SRCCOPY);
+	}
+
+	void Application::Clear()
+	{
+		// 배경색 134,168,135
+		HBRUSH brush = CreateSolidBrush(RGB(134, 168, 135));
+		HBRUSH oldBrush = (HBRUSH)SelectObject(mBackHDC, brush);
+		//Rectangle(mHdc, -1, -1, 1601, 901);
+
+		//Rectangle(mBackHDC, 0, 0, 1501, 801);
+		Rectangle(mBackHDC, mRect.left, mRect.top, mRect.right - mRect.left
+			, mRect.bottom - mRect.top);
+
+		SelectObject(mBackHDC, oldBrush);
+		DeleteObject(brush);
+		Time::Render(mBackHDC);
+		Input::Render(mBackHDC);
+		SceneManager::Render(mBackHDC);
 	}
 
 }

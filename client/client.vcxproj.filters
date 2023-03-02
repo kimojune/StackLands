@@ -53,9 +53,6 @@
     <Filter Include="Contents\Card">
       <UniqueIdentifier>{2d14ac25-6043-431f-84cb-462978fbcf1d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Engine\CardObject">
-      <UniqueIdentifier>{d5389086-7920-48f9-85e1-2afb163996e4}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Client.h">
@@ -136,8 +133,8 @@
     <ClInclude Include="yaCard.h">
       <Filter>Contents\Card</Filter>
     </ClInclude>
-    <ClInclude Include="yaCardObject.h">
-      <Filter>Engine\CardObject</Filter>
+    <ClInclude Include="yaBasicPlayer.h">
+      <Filter>Contents\Card</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -214,8 +211,8 @@
     <ClCompile Include="yaCard.cpp">
       <Filter>Contents\Card</Filter>
     </ClCompile>
-    <ClCompile Include="yaCardObject.cpp">
-      <Filter>Engine\CardObject</Filter>
+    <ClCompile Include="yaBasicPlayer.cpp">
+      <Filter>Contents\Card</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

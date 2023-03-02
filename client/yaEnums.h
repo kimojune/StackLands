@@ -32,11 +32,16 @@ enum class eComponentType
 enum class eCardType
 {
 	Player,
-	Black,
-	Yellow,
-	Orange,
-	Pink,
-	Brown,
+	Money,
+	BasicResource,
+	Equipment,
+	Food,
+	Building,
+	Monster,
+	Fortal,
+	Animal,
+	Idea,
+	rumour,
 	End,
 };
 

@@ -1,21 +1,22 @@
 #pragma once
 
-#include "yaGameObject.h"
+#include "yaCard.h"
 
 namespace ya
 {
-	class Card : public GameObject
+	class BasicPlayer : public Card
+
 	{
 	public:
-		Card();
-		~Card();
-		virtual void Initialize()override ;
+		BasicPlayer();
+		~BasicPlayer();
+		virtual void Initialize()override;
 		virtual void Update()override;
 		virtual void Render(HDC hdc)override;
 		virtual void Release()override;
 
 	private:
 		
-		
+
 	};
 }

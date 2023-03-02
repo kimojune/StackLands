@@ -27,16 +27,7 @@ namespace ya
 	{
 		GameObject::Render(hdc);
 
-		// stock 오브젝트
-		// 배경색 134,168,135
-		HBRUSH brush = CreateSolidBrush(RGB(134, 168, 135));
-		HBRUSH oldBrush = (HBRUSH)SelectObject(hdc, brush);
-		//Rectangle(mHdc, -1, -1, 1601, 901);
 
-		Rectangle(hdc, 0, 0, 1501, 801);
-
-		SelectObject(hdc, oldBrush);
-		DeleteObject(brush);
 	}
 	void BG::Release()
 	{
