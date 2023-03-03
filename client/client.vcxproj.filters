@@ -130,10 +130,13 @@
     <ClInclude Include="yaBG.h">
       <Filter>Contents\BG</Filter>
     </ClInclude>
+    <ClInclude Include="yaCards.h">
+      <Filter>Contents\Card</Filter>
+    </ClInclude>
     <ClInclude Include="yaCard.h">
       <Filter>Contents\Card</Filter>
     </ClInclude>
-    <ClInclude Include="yaBasicPlayer.h">
+    <ClInclude Include="yaCardType.h">
       <Filter>Contents\Card</Filter>
     </ClInclude>
   </ItemGroup>
@@ -208,10 +211,13 @@
     <ClCompile Include="yaBG.cpp">
       <Filter>Contents\BG</Filter>
     </ClCompile>
+    <ClCompile Include="yaCards.cpp">
+      <Filter>Contents\Card</Filter>
+    </ClCompile>
     <ClCompile Include="yaCard.cpp">
       <Filter>Contents\Card</Filter>
     </ClCompile>
-    <ClCompile Include="yaBasicPlayer.cpp">
+    <ClCompile Include="yaCardType.cpp">
       <Filter>Contents\Card</Filter>
     </ClCompile>
   </ItemGroup>
